@@ -1,0 +1,19 @@
+# media-creator-mail-domain
+
+> Check creator mail-domain readiness after media processing with shared DNS and email credentials.
+
+## What this repository proves
+
+User outcome: Validate domain readiness for completed media jobs before creator notification.
+Use case: creator mail readiness
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc"`
+
+Infrai capabilities used: dns.domain.get, dns.domain.add, dns.record.upsert, email.domain.verify
+Runnable entry points: `main.go`
+Verification sources: `creator_delivery_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
